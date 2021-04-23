@@ -58,7 +58,7 @@ public static function getAllusers($id){
     $user = Role::find($id);	
     return $user->users;
 }
-
+//Insert feedback data
 public function insertFeedback(Request $request){
     $Feedback = new Feedback();
     $Feedback->user_id =$request->input('user_id');
