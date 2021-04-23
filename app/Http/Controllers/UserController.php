@@ -54,6 +54,7 @@ public static function  getAllroles($id){
     $user = User::find($id);	
     return $user->roles;
 }
+//get All user listing
 public static function getAllusers($id){
     $user = Role::find($id);	
     return $user->users;
@@ -66,4 +67,5 @@ public function insertFeedback(Request $request){
     
     $Feedback->save();
 }
+
 }
